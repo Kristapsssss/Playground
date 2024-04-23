@@ -1,6 +1,7 @@
 import tkinter as tk
 from PIL import Image as Img, ImageDraw, ImageFont, ImageTk, ImageGrab
 from tkinter import filedialog
+import customtkinter
 
 
 class Watermarker:
@@ -173,7 +174,7 @@ class Watermarker:
         popup.title('About')
         popup.geometry("500x200")
 
-        label = tk.Label(popup, text="Hello!\n\nThis is a simple application to add watermarks to images."
+        label = customtkinter.CTkLabel(popup, text="Hello!\n\nThis is a simple application to add watermarks to images."
                                      "\n\n1. Open image to edit.\n"
                                      "2. Either import a watermark image or choose to add text as watermark.\n"
                                      "3. Edit the watermark style and position.\n"
